@@ -51,7 +51,8 @@ Authentication is not required for accessing the Expense Tracker API endpoints.
 
 200 OK: Returns the expense with the specified ID.
 404 Not Found: Expense not found.
-4. Update Expense
+
+### 4. Update Expense
 **URL:** `/expenses/{id}`
 
 **Method:** `POST`
@@ -71,7 +72,7 @@ Authentication is not required for accessing the Expense Tracker API endpoints.
 - 400 Bad Request: Invalid expense data.
 - 404 Not Found: Expense not found.
 
-### 3. Get Total Expenses
+### 5. Get Total Expenses
 
 **URL:** `/expenses/total-spent`
 
@@ -85,7 +86,7 @@ Authentication is not required for accessing the Expense Tracker API endpoints.
   "totalExpenses": 128.0
 }
 ```
-### 4. Get Monthly Spending
+### 6. Get Monthly Spending
 **URL:** `/expenses/monthly`
 
 **Method:** `GET`
@@ -106,7 +107,7 @@ Response:
   "totalSpending": 128.0
 }
 ```
-### 5. Get Expenses by Category
+### 7. Get Expenses by Category
 **URL:** `/expenses/category`
 
 **Method:** `GET`
@@ -137,45 +138,7 @@ Response:
   }
 ```
 
-### 6. Update Expense
-
-**URL:** `/expenses/{id}`
-
-**Method:** `PUT`
-
-**URL Parameters:**
-- `id` (required): The unique identifier of the expense to update.
-
-**Request Body:**
-- The request body should contain the updated expense information in the following format:
-```json
-{
-  "description": "Updated description",
-  "amount": 50.0,
-  "date": "2023-05-26",
-  "category": "Drinks"
-}
-```
-**Response:**
-
-- 200 OK: Returns the updated expense object.
-- Example Response Body:
-```json
-{
-  "id": "72d1d59c-4092-47a7-9eaf-6b3367e6a4db",
-  "description": "Updated description",
-  "amount": 1000.0,
-  "date": "2023-05-26",
-  "category": "Clothes"
-}
-```
-Error Responses:
-
-- 404 Not Found: If the expense with the specified id is not found.
-- 400 Bad Request: If the request body contains invalid expense data.
-
-
-### 7. Get Monthly Expense Summary
+### 8. Get Monthly Expense Summary
 **URL:** `/expenses/summary`
 
 **Method:** `POST`
