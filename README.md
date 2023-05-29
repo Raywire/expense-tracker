@@ -82,7 +82,7 @@ Authentication is not required for accessing the Expense Tracker API endpoints.
 - Example Response Body:
 ```json
 {
-  "totalExpenses": 128.000.000.000.0
+  "totalExpenses": 128,000,000,000.0
 }
 ```
 ### 4. Get Monthly Spending
@@ -103,7 +103,7 @@ Response:
 ```json
 {
   "month": 5,
-  "totalSpending": 128.000.0
+  "totalSpending": 128,000.0
 }
 ```
 ### 5. Get Expenses by Category
@@ -123,17 +123,17 @@ Response:
 ```json
   {
     "id": "72d1d59c-4092-47a7-9eaf-6b3367e6a4db",
-    "description": "Expense description",
+    "description": "Test",
     "amount": 100.0,
     "date": "2023-05-24",
     "category": "Food"
   },
   {
     "id": "c7fd44dd-5cde-485f-8c81-55a710c2dc68",
-    "description": "Expense description",
+    "description": "Description",
     "amount": 50.0,
     "date": "2023-05-25",
-    "category": "Food"
+    "category": "Electronics"
   }
 ```
 
@@ -153,7 +153,7 @@ Response:
   "description": "Updated description",
   "amount": 50.0,
   "date": "2023-05-26",
-  "category": "Food"
+  "category": "Drinks"
 }
 ```
 **Response:**
@@ -164,9 +164,9 @@ Response:
 {
   "id": "72d1d59c-4092-47a7-9eaf-6b3367e6a4db",
   "description": "Updated description",
-  "amount": 50.0,
+  "amount": 1000.0,
   "date": "2023-05-26",
-  "category": "Food"
+  "category": "Clothes"
 }
 ```
 Error Responses:
