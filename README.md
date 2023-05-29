@@ -41,7 +41,6 @@ Authentication is not required for accessing the Expense Tracker API endpoints.
 **Response:**
 
 - 200 OK: Returns an array of expenses.
-- 404 Not Found: No expenses found.
 
 ### 3. Get Expense by ID
 **URL:** `/expenses/{id}`
@@ -83,7 +82,7 @@ Authentication is not required for accessing the Expense Tracker API endpoints.
 - Example Response Body:
 ```json
 {
-  "totalExpenses": 2500.0
+  "totalExpenses": 128.000.000.000.0
 }
 ```
 ### 4. Get Monthly Spending
@@ -104,7 +103,7 @@ Response:
 ```json
 {
   "month": 5,
-  "totalSpending": 1200.0
+  "totalSpending": 128.000.0
 }
 ```
 ### 5. Get Expenses by Category
