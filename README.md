@@ -82,7 +82,7 @@ Authentication is not required for accessing the Expense Tracker API endpoints.
 - Example Response Body:
 ```json
 {
-  "totalExpenses": 128,000,000,000.0
+  "totalExpenses": 128.0
 }
 ```
 ### 4. Get Monthly Spending
@@ -103,7 +103,7 @@ Response:
 ```json
 {
   "month": 5,
-  "totalSpending": 128,000.0
+  "totalSpending": 128.0
 }
 ```
 ### 5. Get Expenses by Category
