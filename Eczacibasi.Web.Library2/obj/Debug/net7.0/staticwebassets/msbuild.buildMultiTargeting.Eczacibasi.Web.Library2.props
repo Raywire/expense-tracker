@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/Eczacibasi.Web.Library2.props" />
+</Project>
