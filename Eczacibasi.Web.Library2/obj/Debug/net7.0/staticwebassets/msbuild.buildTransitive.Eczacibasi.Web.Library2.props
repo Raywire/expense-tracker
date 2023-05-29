@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="../buildMultiTargeting/Eczacibasi.Web.Library2.props" />
-</Project>
