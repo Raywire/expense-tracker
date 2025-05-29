@@ -14,4 +14,4 @@ RUN dotnet publish Eczacibasi.sln -c Release -o out
 FROM mcr.microsoft.com/dotnet/aspnet:6.0
 WORKDIR /app
 COPY --from=build-env /app/out .
-ENTRYPOINT ["dotnet", "Eczacibasi.dll"]
+ENTRYPOINT ["dotnet", "Spender_v2.dll"]
